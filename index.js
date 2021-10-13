@@ -11,8 +11,8 @@ function getCount(str) {
 }
 
 function getCount(input) {
-    var vowelsCount = 0;
-    var inputLetters = input.split("");
+    let vowelsCount = 0;
+    let inputLetters = input.split("");
 
     const vowels = ["a", "e", "i", "o", "u"];
 
