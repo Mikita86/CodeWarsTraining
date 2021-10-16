@@ -95,3 +95,26 @@ function sumDigPow(a, b) {
     }
     return eureka;
 }
+
+
+function stray(mass) {
+
+    let obj = {}
+    let result;
+    for (i = 0; i < mass.length; i++) {
+        let item = mass[i]
+        if (obj.hasOwnProperty(item.toString())) {
+            let value = obj[item.toString()]
+            value = value + 1
+            obj[item.toString()] = value
+        } else {
+            obj[item.toString()] = 1
+        }
+    }
+    for (key in obj) {
+        if (obj[key] === 1) {
+            result = Number(key)
+        }
+    }
+    return result
+}
