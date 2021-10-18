@@ -123,3 +123,13 @@ function stray(mass) {
 function solution(str) {
     return str.split("").reverse().join("");
 }
+
+
+function enough(cap, on, wait) {
+    let total = on + wait;
+    if (total <= cap) {
+        return 0;
+    } else {
+        return total - cap;
+    }
+}
