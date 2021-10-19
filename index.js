@@ -133,3 +133,12 @@ function enough(cap, on, wait) {
         return total - cap;
     }
 }
+
+
+function boolToWord(bool) {
+    if (bool) {
+        return 'Yes';
+    } else {
+        return 'No';
+    }
+}
