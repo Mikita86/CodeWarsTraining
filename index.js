@@ -142,3 +142,12 @@ function boolToWord(bool) {
         return 'No';
     }
 }
+
+
+function nthChar(words) {
+    var str = "";
+    for (var i = 0; i < words.length; i++) {
+        str += words[i].charAt(i);
+    }
+    return str;
+}
