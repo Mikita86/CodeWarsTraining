@@ -159,3 +159,19 @@ function paperwork(n, m) {
         return n * m;
     }
 }
+
+
+
+function highAndLow(numbers) {
+    numbers = numbers.split(" ");
+    return Math.max(...numbers) + " " + Math.min(...numbers);
+}
+
+
+function countSheeps(arrayOfSheep) {
+    let counter = 0
+    for (let i = 0; i < arrayOfSheep.length; i++) {
+        if (arrayOfSheep[i]) counter += 1
+    }
+    return counter
+}
