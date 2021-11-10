@@ -220,3 +220,8 @@ function expressionMatter(a, b, c) {
     ];
     return Math.max(...values);
 }
+
+
+function digitize(num) {
+    return num.toString().split('').reverse().map(Number); //code here
+}
