@@ -225,3 +225,17 @@ function expressionMatter(a, b, c) {
 function digitize(num) {
     return num.toString().split('').reverse().map(Number); //code here
 }
+
+
+function mergeArrays(a, b) {
+    var answer = [];
+
+    for (i = 0; i < Math.max(a.length, b.length); i++) {
+        if (i < a.length) { answer.push(a[i]); }
+        if (i < b.length) { answer.push(b[i]); }
+    }
+
+    return answer;
+
+
+}
