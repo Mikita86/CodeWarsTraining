@@ -207,3 +207,16 @@ function even_or_odd(number) {
         return 'Odd';
     }
 };
+
+
+function expressionMatter(a, b, c) {
+    let values = [
+        (a + b + c),
+        (a + b * c),
+        ((a + b) * c),
+        (a * b * c),
+        (a * b + c),
+        (a * (b + c)),
+    ];
+    return Math.max(...values);
+}
